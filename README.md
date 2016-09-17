@@ -1,12 +1,11 @@
 Python_scripts
 ==============
 
-Collection of various python scripts, feel free to use, change or push your own scripts.
-Please stick to the same naming conventions used for new folders and files, any scripts can be added.
+Various python code written during MIT CS course and 'Automate the boring stuff with python' book.
 
 Current scripts in collection:
 ------------------------------
 
-|    Script    |    Author    | 
-|:------------:|:------------:|
-|csv_parser.py|[mikeyy109](https://github.com/mikeyy109)|
+|    Script    |
+|:------------:|
+|csv_parser.py|
