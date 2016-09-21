@@ -1,4 +1,4 @@
-# Finding UK mobile numbers in any text input
+# Finding UK/US numbers in any text input
 
 def isUKNum(text):
 	if len(text) != 11:
@@ -28,7 +28,9 @@ def isUSNum(text):
 			return False
 	return True
 
-message = "This is a text message, first number 07837492044, 0172319382, 283881, 07281, 07372849533, 555-222-5555, 22-333-4444-222, 000-222-1111 test case over."
+message = "This is a text message, first number 07837492044," \
+		" 0172319382, 283881, 07281, 07372849533, 555-222-5555," \
+		" 22-333-4444-222, 000-222-1111 test case over."
 
 for i in range(len(message)):
 	chunkUK = message[i:i+11]
@@ -38,4 +40,6 @@ for i in range(len(message)):
 	if isUSNum(chunkUS):
 		print("US Number found: " + chunkUS)
 print("Done")
+
+
 
