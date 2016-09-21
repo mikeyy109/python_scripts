@@ -3,8 +3,11 @@
 def isUKNum(text):
 	if len(text) != 11:
 		return False
-	if text[0:1] != "07":
+	if text[0:2] != "07":
 		return False
+	for i in range(len(text)):
+		if not text[i].isdecimal():
+			return False
 	return True
 
 def isUSNum(text):
